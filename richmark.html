@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/quill.css">
+</head>
+
+<body>
+
+    <div class="split-h">
+        <div class="editor-container flex-1 pad-2">
+            <div id="editor" class="">
+            </div>
+        </div>
+        <div class="split-v flex-1 pad-2">
+            <div id="code-container" class="flex-1 code-container pad-2 border">
+            </div>
+            <div id="preview" class="flex-1 border pad-2">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/vendor/quill.js"></script>
+    <script src="/js/vendor/purify.min.js"></script>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+    <script src="/js/setup-monaco.js"></script>
+    <script src="/js/setup-quill.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

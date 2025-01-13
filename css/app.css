@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* Set the height of html and body to 100% */
+    margin: 0;
+    /* Remove any default margin */
+}
+
+.split-h {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.split-v {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.pad-1 {
+    padding: 8px;
+}
+
+.pad-2 {
+    padding: 16px;
+}
+
+.pad-3 {
+    padding: 32px;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+.code-container {
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .split-h {
+        flex-direction: row;
+    }
+}
