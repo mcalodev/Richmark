@@ -1,6 +1,5 @@
 quill.on('text-change', (delta, oldDelta, source) => {
     const content = quill.getContents();
-    console.log(content)
     convertRichTextToHtml(content)
 });
 
@@ -24,9 +23,7 @@ function convertRichTextToHtml(content) {
         html += output;
     })
 
-    html = DOMPurify.sanitize(html);
-
     updateText(html)
 
-    document.getElementById("preview").innerHTML = html
+    document.getElementById("preview").innerHTML = DOMPurify.sanitize(html);
 }
